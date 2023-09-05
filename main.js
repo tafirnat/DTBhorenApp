@@ -11,12 +11,12 @@ for (let i = 0; i < itemLen; i++) {
 }
 //fetch islemi ile json verilerinin dahil edilmesi
 async function fetchRun(url,status,item) {
-    console.log(status, url)
+    // console.log(status, url)
     // try {
         if(status){
            const response = await fetch(url);
 
-            console.log('>>', url)
+            // console.log('>>', url)
             
            if (!response.ok){
                throw new Error('Status: ', status || 'mp3 ', 'ögeye erisilemedi! ', url);
@@ -24,7 +24,7 @@ async function fetchRun(url,status,item) {
            let fetchData = await response.json()
            window[status] = status !=='dialogs'?fetchData[0]:fetchData;
 
-          console.log(fetchData)
+          // console.log(fetchData)
           if(item) testCreator()
         }else{
            // await playAudio(url)
@@ -104,13 +104,13 @@ function testCreator(){
     testObj.date=`Der ${dates.woche[getNums(3)]} ${dates.days[getNums(7)]} im ${dates.months[getNums(12)]}`
     testObj.auftrag = getAuftragNum()
     
-    console.log(names)
-    console.log(dates)
-    console.log(dialogs)
-    console.log(testObj)
+    // console.log(names)
+    // console.log(dates)
+    // console.log(dialogs)
+    // console.log(testObj)
     //TTS sesi rast gele secilir
     ttsAlpha = dates.alpha[getNums(7)]
-    console.log('ttsAlpha: ',ttsAlpha)
+    // console.log('ttsAlpha: ',ttsAlpha)
 
     
    let teil_1 = [
@@ -166,7 +166,7 @@ function testCreator(){
                  beep+'%timeOut:30000', //beep sesi
                     googleTTS(main.benedet)
                   ]
-    console.log(allTest)
+    //console.log(allTest)
    playSequentially(allTest)
 }
 
@@ -199,7 +199,7 @@ async function playSequentially(urls) {
                     aTTS = ttsDialogAlphe == "B" ? "E" :"B";
                     bTTS = ttsDialogAlphe == "C" ? "F" :"C";
                 }
-console.log(aTTS, bTTS)
+// console.log(aTTS, bTTS)
              //dialog
                 for (let j=0; j<urls[i].length;j++) {
                     let txt = urls[i][j].split('# ')
@@ -216,7 +216,7 @@ console.log(aTTS, bTTS)
         }else{
             await playAudio(urls[i]);
         }
-    console.log(urls[i])
+    //console.log(urls[i])
     delete ttsDialogAlphe
     }
 }
