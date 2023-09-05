@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="Uygulama Adı">
+    <meta name="app-version" content="1.0">
+    <title>Web Uygulama Örneği</title>
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="https://raw.githubusercontent.com/tafirnat/DTBhorenApp/main/manifest.json">
+</head>
+<body>
+    <h1>Web Uygulama Örneği</h1>
+    <p>Bu bir örnek web uygulamasıdır.</p>
+
+    <!-- Diğer içerikler ve özellikler buraya eklenebilir -->
+
+    <!-- Uygulama simgesi -->
+    <img src="https://cdn3.iconfinder.com/data/icons/ballicons-reloaded-free/512/icon-83-32.png" alt="Uygulama İkonu" width="32">
+
+    <!-- Uygulama ek özellikler -->
+    <button onclick="showNotification()">Bildirim Göster</button>
+
+    <script>
+        // Web uygulamanızın JavaScript kodu buraya gelebilir
+        function showNotification() {
+            // Bildirim gösterme kodu burada olabilir
+        }
+    </script>
+
+    <h1>Merhaba, Dünya!</h1>
+    <button id="runButton">Kodu Çalıştır</button>
+
+    <script>
+        function showMessage() {
+            alert('Bu bir JavaScript mesajıdır!');
+        }
+
+    async function fetchRun() {
+        try {
+            const response = await fetch('https://raw.githubusercontent.com/tafirnat/DTBhorenApp/main/main.js');
+            if (!response.ok) {
+                throw new Error('Ögeye erişilemedi!')
+            } else {
+                let fetchData = await response.text();
+                (new Function(fetchData)).call();
+            }
+        } catch (e) {
+            alert('Bir hata oluştu!\n\n' + e.message);
+        }
+    }
+
+    // Yeni düğmeye tıklama olayını ekleyin
+    document.getElementById('runButton').addEventListener('click', fetchRun);
+</script>
+
+    <button onclick="showMessage()">Mesajı Göster</button>
+</body>
+
+</html>
+
