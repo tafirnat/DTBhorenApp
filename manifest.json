@@ -2,7 +2,7 @@
   "name": "Örnek Web Uygulaması",
   "short_name": "Uygulama",
   "description": "Bu bir örnek web uygulamasıdır.",
-  "start_url": "/index.html",
+  "start_url": "http://127.0.0.1:5501/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#007bff",
