@@ -2,7 +2,7 @@
   "name": "Örnek Web Uygulaması",
   "short_name": "Uygulama",
   "description": "Bu bir örnek web uygulamasıdır.",
-  "start_url": "https://cdn3.iconfinder.com/data/icons/ballicons-reloaded-free/512/icon-83-32.png",
+  "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#007bff",
