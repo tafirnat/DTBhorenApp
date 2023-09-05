@@ -1,0 +1,17 @@
+[
+  {
+      "beginnt": "Bei diesem Hörtest hören Sie nacheinander zwei verschiedene Teile. Für jeden Teil werden Sie daran erinnert, auf welche Informationen Sie achten müssen. ",
+      "teil_1_beginnt": "Teil 1: Der erste Teil enthält verschiedene Informationen über den Kunden. Dazu gehören: der vollständige Name des Kunden, seine Telefonnummer, das Bestelldatum und die Bestellnummer. Bitte notieren Sie sich diese Informationen sorgfältig. Dieser Abschnitt dauert ca. 30 Sekunden.  ",
+      "nameTxt": "Name der Ansprechperson: ",
+      "telTxt": "Die zur Kontaktaufnahme angegebene Telefonnummer: ",
+      "alphaTxt": "Ich buchstabiere diesen Nachnamen: ",
+      "dateTxt": "Datum und Uhrzeit der Bestellung: ",
+      "auftragTxt": "Die Auftragsnummer des Kunden: ",
+      "teil_1_endet":"Der Hörtest Teil 1 ist beendet. Bitte kontrollieren Sie Ihre Antworten. Sie haben dafür 20 Sekunden Zeit. ",
+      "teil_2_beginnt" : "Teil 2: In diesem Teil hören Sie einen Dialog. Zu Beginn erhalten Sie eine kurze Beschreibung des Dialogs. Dieser Teil dauert etwa 1 Minute. Hören Sie sich den Dialog an und beantworten Sie am Ende zwei Fragen zum Dialog. ",
+      "teil_2_endet" : "Der Hörtest ist beendet. Bitte beantworten Sie die beiden Fragen auf dem Bildschirm. Sie haben dafür 30 Sekunden Zeit. ",
+      "benedet": "Ihr Hörtest ist beendet",
+      "beep": ["https://cdn.freesound.org/previews/624/624599_13772754-lq.mp3","https://notification-sounds.com/soundsfiles/Airplane-ding-sound.mp3"]
+  }
+  
+]
